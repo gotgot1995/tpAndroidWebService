@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Second Try</string>
+
+    <!-- Raw Json Fragment -->
+    <string name="fragment_main_default_txt">Getting connectivity status…</string>
+    <string name="app_status_connected">Connected !</string>
+    <string name="app_status_no_internet">No Internet !</string>
+    <string name="http_response_received">HTTP response received :-)</string>
+
+    <!-- Volley 1 Fragment -->
+    <string name="hint_username">Github username</string>
+    <string name="search_username">Search projects</string>
+    <string name="no_repo_found">No repo found</string>
+    <string name="rest_api_error">Error while calling REST API</string>
+
+    <!-- Main Activity -->
+    <string name="title_activity_raw_json">RawJsonActivity</string>
+    <string name="title_activity_volley1">Volley1Activity</string>
+
+    <!-- Global strings -->
+    <string name="action_settings">Settings</string>
+</resources>
