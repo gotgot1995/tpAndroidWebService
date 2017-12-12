@@ -20,16 +20,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.RawJsonActivity"
-            android:label="@string/title_activity_raw_json"
-            android:parentActivityName=".activities.MainActivity">
+            android:name=".activities.HttpWebServiceActivity"
+            android:label="@string/title_activity_raw_json">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="fr.gautier.secondtry.activities.MainActivity" />
         </activity>
+
         <activity
             android:name=".activities.Volley1Activity"
-            android:label="@string/title_activity_volley1"></activity>
+            android:label="@string/title_activity_volley1" />
+
+        <activity
+            android:name=".activities.SpringTemplateActivity"
+            android:label="@string/title_activity_spring_template">
+
+        </activity>
     </application>
 
 </manifest>

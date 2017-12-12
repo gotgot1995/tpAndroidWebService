@@ -10,19 +10,20 @@ import fr.gautier.secondtry.R;
 
 public class MainActivity extends Activity {
 
-    Button rawJsonActivityBtn;
-    Button volley1ActivityBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.rawJsonActivityBtn = findViewById(R.id.raw_json_activity_btn);
-        this.rawJsonActivityBtn.setOnClickListener(x -> launchActivity("RawJsonActivity"));
+        Button rawJsonActivityBtn = findViewById(R.id.raw_json_activity_btn);
+        rawJsonActivityBtn.setOnClickListener(view -> launchActivity("HttpWebServiceActivity"));
 
-        this.volley1ActivityBtn = findViewById(R.id.volley1_activity_btn);
-        this.volley1ActivityBtn.setOnClickListener(x -> launchActivity("Volley1Activity"));
+        Button volley1ActivityBtn = findViewById(R.id.volley1_activity_btn);
+        volley1ActivityBtn.setOnClickListener(view -> launchActivity("Volley1Activity"));
+
+        Button springTemplateBtn = findViewById(R.id.spring_activity_btn);
+        springTemplateBtn.setOnClickListener(view -> launchActivity("SpringTemplateActivity"));
     }
 
     public void launchActivity(String className) {

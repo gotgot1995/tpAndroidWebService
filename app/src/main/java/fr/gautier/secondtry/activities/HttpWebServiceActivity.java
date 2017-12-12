@@ -5,7 +5,7 @@ import android.app.Activity;
 
 import fr.gautier.secondtry.R;
 
-public class RawJsonActivity extends Activity {
+public class HttpWebServiceActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

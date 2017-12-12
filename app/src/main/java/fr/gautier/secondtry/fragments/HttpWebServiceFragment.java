@@ -22,12 +22,12 @@ import fr.gautier.secondtry.R;
 import fr.gautier.secondtry.http.HttpWrapper;
 
 
-public class RawJsonFragment extends Fragment {
+public class HttpWebServiceFragment extends Fragment {
     private TextView appStatusTxt;
     private TextView resultTxt;
     private Button testWebServiceBtn;
 
-    public RawJsonFragment() {
+    public HttpWebServiceFragment() {
         // Required empty public constructor
     }
 
@@ -77,15 +77,15 @@ public class RawJsonFragment extends Fragment {
         // onPostExecute displays the results of the AsyncTask.
         @Override
         protected void onPostExecute(String result) {
-            Toast.makeText(RawJsonFragment.this
+            Toast.makeText(HttpWebServiceFragment.this
                     .getActivity().getBaseContext(),
                     R.string.http_response_received, Toast.LENGTH_LONG).show();
 
             try {
                 JSONObject jsonObject = new JSONObject(result);
-                RawJsonFragment.this.resultTxt.setText(jsonObject.toString(1));
+                HttpWebServiceFragment.this.resultTxt.setText(jsonObject.toString(1));
             } catch (JSONException e) {
-                RawJsonFragment.this.resultTxt.setText(result);
+                HttpWebServiceFragment.this.resultTxt.setText(result);
                 e.printStackTrace();
             }
         }
